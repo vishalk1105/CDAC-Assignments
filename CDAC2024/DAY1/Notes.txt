@@ -1,0 +1,165 @@
+What is Algorithm ?
+set of rule ....
+finite.....
+
+
+2 + 2 == 4 
+
+
+syntax.
+start 
+input 
+operation
+output
+end
+=======
+EX.
+1)
+start 
+take 2 numbers 
+add 2 numbers 
+display result
+end
+
+2)
+start 
+declare Number1
+declare Number2
+store Number1 + Number2 in result
+display result
+end
+3)
+st 	sult
+end
+ex. 
+12
+19
+---
+
+
+4)
+start 
+declare N
+
+store Number1 + Number2.... + N in result
+display result
+end
+===============================================================
+
+What is flowchart ?
+pictorial representaion....
+==================================
+
+ex. grade system
+1)
+start 
+input marks 
+if marks > 60, then print A grade
+if marks > 50, then print B grade
+if marks > 40, then print C grade
+end
+
+2)
+start 
+input marks 
+if marks >= 60, then print A grade
+if marks >= 50 and marks < 60, then print B grade
+if marks >= 40 and marks < 50, then print C grade
+end
+
+
+==========
+Create algo for Even & odd nos
+Create seq number
+================
+
+
+What is Java ?
+high level programming language vs low level 
+oop vs procedural prog lang.( C Lang)
+
+
+extention....
+.txt
+.pdf
+.xlsx
+.jpg / .jpeg
+
+
+java code 
+.java
+
+=================
+file Name = Demo.java
+
+compilation - javac Demo.java
+	            FILENAME With Extention	
+
+Run - java Demo
+	classname without extention
+===========================================
+variable === used to store the values
+
+Data Type
+ex. 
+int 
+float  = decimal value
+double
+long
+short
+
+char
+String 
+
+boolean = True / false  (0/1 not in java)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
