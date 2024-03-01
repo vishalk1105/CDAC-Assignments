@@ -1,0 +1,20 @@
+Array - search in javaDocs
+-------
+similar datatype
+Syntax : 
+
+int a = {10,20,30}; 
+=========================
+
+access modifiers : variable , methods , contru, class
+
+Private 
+public 
+protected
+dafualt 
+
+non-access modifiers :
+static .....
+
+
+**********Package***********
