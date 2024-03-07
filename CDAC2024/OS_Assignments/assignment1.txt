@@ -1,0 +1,46 @@
+-----------------------------------Concepts of Operating System--------------------------------------------
+                                            Assignment 1 
+Qn1.-------------------->
+
+ a) cd home/vishalkamble ; mkdir LinuxAssignment 
+    cd LinuxAssignment
+ b) cat > file1.txt ---> Content1 content2 content3 ---> cat file1.txt (Shows Content)
+ c) mkdir docs
+ d) cp file1.txt ./docs  (copied file into docs directory)
+    mv file1.txt file2.txt (to change name of file from file1 to file2)
+ e) chmod u+rwx file2.txt (to give all permission to owner)
+    su adduser vishal1
+    sudo chattr -i file2.txt
+    lsattr file2.txt
+    sudo chown vishalkamble:vishal1 file2.txt
+ f) cd .. ---> ls -R
+ g) find . -name "*.txt" -print  / find . -type f -name "*.txt"
+    grep -li content1 ./file1.txt .docs/file2.txt
+ h) date
+ i) ifconfig, ip addr, ip a, 
+    ping ipAddrs
+ j) sudo apt install zip
+    zip -r docs.zip docs
+ k) vim file1.txt
+    esc i  ----> add data
+    sed 's/content1/CPP/g' file1.txt
+
+
+ Qn2.---------------------------->
+ a) mkdir LinuxAssignment2
+    cd LinuxAssignment2
+    cat > data.txt (enter a data) 
+    head data.txt
+ b)   tail -5 data.txt
+ c) vim numbers.txt
+    i add 1-25 :wq
+    head -n 15 numbers.txt
+ d) tail -n 3 numbers.txt
+ e) touch output.txt
+    sed -e 's/\([a-z]\)/\U\1/g' input.txt >output.txt
+    tr 'a-z' 'A-Z' 
+ f) cat > duplicate.txt
+    uniq -u duplicate.txt
+ g) cat > fruits.txt
+    sort fruits.txt | uniq -c
+
