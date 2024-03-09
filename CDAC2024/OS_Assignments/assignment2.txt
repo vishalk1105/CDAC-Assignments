@@ -1,0 +1,202 @@
+-------------------------------------Concepts of Operating System-------------------------
+                                           Assignment no 2
+
+                                                                     part A
+1) echo "Hello, World!" 
+     display "Hello World" on terminal
+2) name="Productive" 
+    create variable name with Productive value
+3) touch file.txt 
+    create empty file file.txt
+4)
+ show all file including hidden files
+5) 
+delete file.txt
+6) 
+move file.txt to directory
+7) 
+will give all permision to owner, read and execute permission to other user and group
+8) 
+will find pattern word in file
+9) 
+will stop the perticular ID process
+10)
+ create mydir and move in mydir createan empty file.txt , add hello world in it and cat will display the content
+11) 
+will display the list of all txt files with long list format permission, owner, group, size and modification date. 
+12) 
+will display unique values in sorted manner
+13)
+will display files and directories in all format and filters the output using grep and only shows the lines start with 'd'.
+14) chmod 644 file.txt?
+      read and write permission to owner and read permission to other user and group
+15)  cp -r source_directory destination_directory?
+       copy the the directory and and their content from a source dir to destination dir
+16)  find  /path/to/search -name "*.txt"?
+       to search all txt files to given path
+17) chmod u+x file.txt 
+       give execution permission to owner
+18)  echo $PATH 
+       to find which directories your shell is set to check for executable files
+
+                                                          PART B
+
+1) ls is used to list files and directories in a directory.  True
+2) mv is used to move files and directories.   True
+3) cd is used to copy files and directories.   False
+4) pwd stands for "print working directory" and displays the current directory.  False
+5) grep is used to search for patterns in files.  True
+6) chmod 755 file.txt gives read, write, and execute permissions to the owner, and read and execute permissions to group and others.  True
+7) mkdir -p directory1/directory2 creates nested directories, creating directory2 inside directory1 if directory1 does not exist. True
+8) rm -rf file.txt deletes a file forcefully without confirmation.  True
+
+Identify the Incorrect Commands:
+1. chmodx is used to change file permissions.    Incorrect   
+2. cpy is used to copy files and directories.       Incorrect
+3. mkfile is used to create a new file.                 correct
+4. catx is used to concatenate files.                   Incorrect
+5. rn is used to rename files                              Incorrect   mv command is used to change file name
+
+
+
+                                                        PART C
+1)#!/bin/sh
+   echo "Hello, World!"
+
+2) name="CDAC MUMBAI"
+     echo $name
+
+3) #!/bin/sh
+    read number
+    echo $number
+
+4)  #!/bin/sh
+   read num1
+   read num2
+   ((sum= $num1 + $num2 ))
+   echo $sum
+
+5) #!/bin/sh   // space for condition brackets
+   read number
+      if  [  $(( $number % 2 )) == 0 ];
+then
+        echo "$number is even"
+else
+        echo "$number is odd"
+fi
+
+6) #!/bin/bash   // no space in for brackets
+ for ((i=1; i<=5; i++))
+ do
+        echo $i
+done
+
+7) #!/bin/sh
+x=1
+while [[ $x -le 5 ]]     // space for cinditional square barckets
+do
+        echo $x
+        let x+=1     // no need to add $
+done
+
+8)#!/bin/sh
+var= find ${PWD} -name "*.txt"       //space after =
+if [ -z "$var" ];                                    //space at end and start   and if condition 1 sq bracket
+then
+        echo "File Does not exist"
+else
+        echo "File exist"
+fi
+
+9)#!/bin/sh
+read num
+if [ $num -gt 10 ];
+then
+        echo "$num is greater than 10"
+else
+        echo "$num is less than 10"
+fi
+
+10)  #!/bin/bash   // no space in for brackets
+  for ((i=1; i<=5; i++))
+  do
+          for (( j=1; j<=10; j++))
+          do
+                  echo "$i x $j = $(($i*$j))"
+          done
+  done
+
+
+11)#!/bin/sh
+while true;
+do
+        read num
+        if [ $num -lt 0 ];
+        then
+                echo "break loop"
+                break
+        fi
+
+        sqr=$((num*num))
+        echo "Sqr of $num is $sqr"
+done
+
+
+                                                                                              Part E
+
+1. Consider the following processes with arrival times and burst times:
+ | P   | AT|bt|ct |tat|wt
+ | P1 | 0 | 5 | 5 | 5 |0                               AVG waiting time 3.33unit
+ | P2 | 1 | 3 |8  |7 | 4
+ | P3 | 2 | 6 |14|12|6
+ Calculate the average waiting time using First-Come, First-Served (FCFS) scheduling. 
+2.
+ | P   | AT|bt | CT | TAT | WT
+ | P1 | 0 | 3  | 4    |  4    |  1
+ | P2 | 1 | 5  | 13  | 12   |  7                   Avg TAT= 5.5unit
+ | P3 | 2 | 1  | 3    |  1    |  0
+ | P4 | 3 | 4  | 8    |  5    |  1
+ Calculate the average turnaround time using Shortest Job First (SJF) scheduling
+
+
+3.Consider the following processes with arrival times, burst times, and priorities (lower number
+     indicates higher priority
+
+| Process | Arrival Time | Burst Time | Priority | CT      |    TAT    | WT
+ | P1        | 0                 | 6               | 3          |   12     |    12       | 6
+ | P2        | 1                 | 4               | 1          |   5       |     4        | 0                     Avg Wt = 4.5 unit
+ | P3        | 2                 | 7               | 4          |   19     |    17       | 10   
+ | P4        | 3                 | 2               | 2          |    7      |    4         |  2
+ Calculate the average waiting time using Priority Scheduling. 
+
+4. Consider the following processes with arrival times and burst times, and the time quantum for
+       Round Robin scheduling is 2 units: 
+
+| Process | Arrival Time | Burst Time  |  CT      |    TAT    | WT
+| P1         | 0                 | 4                |   10      |     10      |  6
+| P2         | 1                 | 5                |   14      |     13      |  8                         AVG TAT =9.25unit
+| P3         | 2                 | 2                |   6        |     4        |  2
+| P4         | 3                 | 3                |  13       |     10      |  7
+ Calculate the average turnaround time using Round Robin scheduling. 
+
+5. Consider a program that uses the fork() system call to create a child process. Initially, the parent
+process has a variable x with a value of 5. After forking, both the parent and child processes
+increment the value of x by 1.
+ What will be the final values of x in the parent and child processes after the fork() call?
+
+ANS:   6
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+    
